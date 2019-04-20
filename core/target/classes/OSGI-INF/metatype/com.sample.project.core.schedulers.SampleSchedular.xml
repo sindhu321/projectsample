@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.sample.project.core.schedulers.SampleSchedular">
+    <OCD id="com.sample.project.core.schedulers.SampleSchedular" name="%com.sample.project.core.schedulers.SampleSchedular.name" description="%com.sample.project.core.schedulers.SampleSchedular.description">
+        <AD id="schedular.expression" type="String" default="10\ 0\ 0\ ?\ *\ *\ *" name="%com.sample.project.core.schedulers.SampleSchedular.schedular.expression.name" description="%com.sample.project.core.schedulers.SampleSchedular.schedular.expression.description"/>
+    </OCD>
+    <Designate pid="com.sample.project.core.schedulers.SampleSchedular">
+        <Object ocdref="com.sample.project.core.schedulers.SampleSchedular"/>
+    </Designate>
+</metatype:MetaData>

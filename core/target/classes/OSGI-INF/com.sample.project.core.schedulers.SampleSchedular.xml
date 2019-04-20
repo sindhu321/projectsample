@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.sample.project.core.schedulers.SampleSchedular">
+        <implementation class="com.sample.project.core.schedulers.SampleSchedular"/>
+        <service servicefactory="false">
+            <provide interface="java.lang.Runnable"/>
+        </service>
+        <property name="schedular.expression" value="10 0 0 ? * * *"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.sample.project.core.schedulers.SampleSchedular"/>
+        <reference name="prop" interface="com.sample.project.core.services.GetProperty" cardinality="1..1" policy="static" bind="bindProp" unbind="unbindProp"/>
+    </scr:component>
+</components>
