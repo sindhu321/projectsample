@@ -28,5 +28,6 @@ public class AddProperty extends SlingSafeMethodsServlet
 	{
 		log.info("entered into servlet:");
 		service.adProperty("/content/exampleTemplate/jcr:content");
+		
 	}
 }
